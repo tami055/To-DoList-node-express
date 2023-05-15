@@ -1,6 +1,6 @@
 import express from 'express'
-import {createRequire} from 'module'
-const require = createRequire(import.meta.url);
+import {require} from 'module'
+const require = require(import.meta.url);
 const app=express()
 const port=3000
 const sdk = require('api')('@render-api/v1.0#dnrc1ulf088q9j');
